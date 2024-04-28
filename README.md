@@ -5,3 +5,4 @@
   1) Visualizar o perfil de maneira ressponsível, ou seja, tanto em mobile quanto em desktop.
   2) Trocar entre as telas.
   3) Mostrar os colegas.
+  4) Ao selecionar um item na nav-bar, direcionar o usuário para parte específica da aplicação web.
