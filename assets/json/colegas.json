@@ -1,0 +1,37 @@
+{
+    "grid": [
+      {
+        "href": "https://github.com/vitorrebula",
+        "img": {
+          "src": "assets/img/vitor-rebula.jpg",
+          "alt": "Vitor Rebula"
+        },
+        "name": "Vitor Rebula"
+      },
+      {
+        "href": "https://github.com/saviorosynni",
+        "img": {
+          "src": "assets/img/savio-rosynni.jpg",
+          "alt": "Sávio Rosynni"
+        },
+        "name": "Sávio Rosynni"
+      },
+      {
+        "href": "https://github.com/dbragabarbosa",
+        "img": {
+          "src": "assets/img/daniel-braga.jpg",
+          "alt": "Daniel Braga"
+        },
+        "name": "Daniel Braga"
+      },
+      {
+        "href": "https://github.com/Thiagocs8",
+        "img": {
+          "src": "assets/img/thiago-costa.jpg",
+          "alt": "Thiago Costa"
+        },
+        "name": "Thiago Costa"
+      }
+    ]
+  }
+  

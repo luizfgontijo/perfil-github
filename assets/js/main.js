@@ -1,6 +1,5 @@
 const repositorios = document.querySelector('#repos .row');
-    const perfil = document.querySelector('.Perfil');
-    const cabecalho = document.querySelector('.header');
+const cabecalho = document.querySelector('.header');
     
     function getapigit() {
         fetch('https://api.github.com/users/luizfgontijo/repos')
@@ -56,6 +55,33 @@ const repositorios = document.querySelector('#repos .row');
     getapigit();
     getheader(); 
 
-    function getperfil() {
-        
-    }
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('assets/json/colegas.json')
+            .then(response => response.json())
+            .then(data => {
+                const gridContainer = document.getElementById('grid');
+    
+                data.grid.forEach(person => {
+                    const personDiv = document.createElement('div');
+                    const personLink = document.createElement('a');
+                    const personImg = document.createElement('img');
+                    const personName = document.createElement('p');
+    
+                    personLink.href = person.href;
+                    personLink.classList.add('pessoa');
+    
+                    personImg.src = person.img.src;
+                    personImg.alt = person.img.alt;
+                    personImg.classList.add('fotos');
+    
+                    personName.classList.add('nome');
+                    personName.textContent = person.name;
+    
+                    personLink.appendChild(personImg);
+                    personLink.appendChild(personName);
+                    personDiv.appendChild(personLink);
+                    gridContainer.appendChild(personDiv);
+                });
+            })
+            .catch(error => console.error('Error fetching the JSON data:', error));
+    });
